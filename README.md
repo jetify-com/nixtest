@@ -1,5 +1,5 @@
 # NixTest
-### Simple unit testing for Nix
+### A tiny unit testing framework written in pure Nix
 ![License: Apache 2.0](https://img.shields.io/github/license/jetpack-io/nixtest)
 
 ## What is it?
@@ -51,8 +51,8 @@ let
 in [
   {
     name = "Test function concatenate";
-    actual = lib.concatenate 'a', 'b';
-    expected = 'ab';
+    actual = lib.concatenate "a" "b";
+    expected = "ab";
   }
   {
     name = "Test function add";
@@ -84,3 +84,10 @@ error: 1/7 tests failed
          Got: 2
          Expected: 3
 ```
+
+## Related Work
++ [runTests](https://nixos.org/manual/nixpkgs/stable/#function-library-lib.debug.runTests): A testing function included in `nixpkgs.lib.debug`. Probably the
+  most commonly used testing library for Nix. We recommend using it for cases
+  where you are ok depending on `nixpkgs`.
++ [Nixt](https://github.com/nix-community/nixt): Unit testing framework for Nix, written
+  in Typescript. Depends on both `nixpkgs` and `typescript`.
