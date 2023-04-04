@@ -1,0 +1,23 @@
+{
+  "nodes": {
+    "nixtest": {
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-rhkwxEcBG5YzQX/e2xAW6tLyB2XUgwjQuf5QbJAQrWw=",
+        "path": "/nix/store/d4hvj0z2sgcr7igia91p9nsf3czljklr-source/nixtest",
+        "type": "path"
+      },
+      "original": {
+        "path": "/nix/store/d4hvj0z2sgcr7igia91p9nsf3czljklr-source/nixtest",
+        "type": "path"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixtest": "nixtest"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
