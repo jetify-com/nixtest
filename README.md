@@ -11,6 +11,8 @@ The framework was designed to be minimal: it is entirely self-contianed and
 depends only on nix builtin functions. Specifically, it does *not* depend on `nixpkgs`,
 which can get somewhat large as a dependency.
 
+NixTest was originally built by [jetpack.io](https://www.jetpack.io) – the company behind [Devbox](https://github.com/jetpack-io/devbox) (one of the easiest ways to use Nix).
+
 ## Usage
 ### 1. Import the library
 To use the nixtest library, import it as an input in the flake where you are
