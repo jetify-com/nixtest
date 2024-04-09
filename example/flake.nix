@@ -4,7 +4,7 @@
     # Import the nixtest flake as an input.
     # In normal usage you would reference the published repo:
     # 
-    #  nixtest.url = "github:jetpack-io/nixtest";
+    #  nixtest.url = "github:jetify-com/nixtest";
     # 
     # Inside the nixtest repo, we instead use the local path:
     nixtest.url = "../.";

@@ -2,7 +2,7 @@
 
 ### A tiny unit testing framework written in pure Nix
 
-![License: Apache 2.0](https://img.shields.io/github/license/jetpack-io/nixtest)
+![License: Apache 2.0](https://img.shields.io/github/license/jetify-com/nixtest)
 
 ## What is it?
 
@@ -24,7 +24,7 @@ writing tests, and call `nixtest.run <dir>` on the root directory:
 
 ```nix
 {
-  inputs.nixtest.url = "github:jetpack-io/nixtest";
+  inputs.nixtest.url = "github:jetify-com/nixtest";
   outputs = { self, nixtest }: {
     # Will recursively look for _test.nix files in the current directory
     # and run them:
